@@ -477,31 +477,57 @@
             <p><i class="fa-solid fa-phone"></i>(+40) 724-037-721</p>
 
             <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.instagram.com/dascalu_claudiu/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
 
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/claudiu-dascalu/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
 
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/ClaudiuDC21"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
 
           <div class="contact-right">
             <form>
-              <input type="text" name="Name" placeholder="Your Name" required />
-
+              <label for="name-input" class="visually-hidden">Full Name</label>
               <input
-                type="email"
-                name="email"
-                id="Your email"
-                placeholder="Your email"
+                type="text"
+                id="name-input"
+                name="Name"
+                placeholder="Your Name"
                 required
               />
 
+              <br /><br />
+
+              <label for="email-input" class="visually-hidden"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email-input"
+                placeholder="contact@example.com"
+                required
+              />
+
+              <br /><br />
+
+              <label for="message-input" class="visually-hidden"
+                >Your Detailed Message</label
+              >
               <textarea
                 name="Message"
                 rows="6"
-                placeholder="Your message"
+                id="message-input"
+                placeholder="Please describe your request here..."
               ></textarea>
+
+              <br /><br />
 
               <button type="submit" class="btn btn2">Submit</button>
             </form>
