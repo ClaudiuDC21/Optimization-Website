@@ -223,7 +223,6 @@ nav img {
   height: auto;
   padding: 30px 30px;
   box-sizing: border-box;
-  text-align: justify;
 }
 
 .image-column {
@@ -393,7 +392,6 @@ nav img {
 }
 
 .visually-hidden {
-  /* Hides the label text visually, but keeps it accessible to screen readers. */
   position: absolute;
   width: 1px;
   height: 1px;
