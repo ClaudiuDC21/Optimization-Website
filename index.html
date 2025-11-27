@@ -1,263 +1,467 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Investigation: OPTIMIZATION – Beyond the Algorithm</title>
 
-    <meta name="description" content="A deep investigation into the meaning of the word 'Optimization', from its formal definition to personal and collective perceptions." />
-    <meta name="keywords" content="Optimization, Optimal, Deep Dive, Information Architecture, Content Strategy, Web Design, Formal Definition" />
+    <meta
+      name="description"
+      content="A deep investigation into the meaning of the word 'Optimization', from its formal definition to personal and collective perceptions."
+    />
+
+    <meta
+      name="keywords"
+      content="Optimization, Optimal, Deep Dive, Information Architecture, Content Strategy, Web Design, Formal Definition"
+    />
+
     <meta name="author" content="Dascalu Claudiu-Cristian" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/9df2499000.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/9df2499000.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Investigation: OPTIMIZATION – Beyond the Algorithm",
-      "image": "images/abstract-optimization-graph.jpg",
-      "datePublished": "2025-11-24",
-      "author": {
-        "@type": "Person",
-        "name": "AI Assistant"
-      },
-      "description": "A multi-layered analysis of the Optimization concept, with personal and sociological insights."
-    }
-    </script>
-</head>
-<body>
+      {
+        "@context": "https://schema.org",
 
+        "@type": "Article",
+
+        "headline": "Investigation: OPTIMIZATION – Beyond the Algorithm",
+
+        "image": "images/abstract-optimization-graph.jpg",
+
+        "datePublished": "2025-11-24",
+
+        "author": {
+          "@type": "Person",
+
+          "name": "AI Assistant"
+        },
+
+        "description": "A multi-layered analysis of the Optimization concept, with personal and sociological insights."
+      }
+    </script>
+  </head>
+
+  <body>
     <div id="header">
       <div class="container">
         <nav>
-          <div class="logo-text">⚡ OPTIMIZATION</div>
-                <ul id="sidemenu">
-                    <li><a href="#header">Concept</a></li>
-                    <li><a href="#formal">Formal Definition</a></li>
-                    <li><a href="#personal">The Internal Engine</a></li>
-                    <li><a href="#multimodal">Visualization</a></li>
-                    <li><a href="#derivatives">Derivatives</a></li>
-                    <li><a href="#ia-strategy">IA & Strategy</a></li>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>An Investigative Deep Dive</p>
-                <h1>
-                    The Pursuit of <br />
-                    <span>Optimal</span>
-                </h1>
-            </div>
+          <img src="images/LogoOptimization.png" alt="Logo Optimization" />
+
+          <ul id="sidemenu">
+            <li><a href="#about">Formal Definition</a></li>
+
+            <li><a href="#deep">The Internal Engine</a></li>
+
+            <li><a href="#portfolio">Visualization</a></li>
+
+            <li><a href="#personal">Personal Vision</a></li>
+
+            <li><a href="#people">Collected Views</a></li>
+          </ul>
+
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>An Investigative Deep Dive</p>
+
+          <h1>
+            The Pursuit of <br />
+
+            <span>Optimal</span>
+          </h1>
+        </div>
       </div>
     </div>
 
-    <div id="about"">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                   <img src="images/MinMax.png" alt="MinMax" />
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">Formal & Contextual Definition</h1>
-                    <p>
-                        <span>Optimization</span> is the art and science of achieving the best possible result (<span>the Optimal</span>) given limited resources and constraints. It doesn't mean perfection, but <span>maximum efficiency</span>.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('formal')">
-                            Formal Level (Mathematics)
-                        </p>
-                        <p class="tab-links" onclick="opentab('tehnic')">
-                            Technical Level (IT/Web)
-                        </p>
-                        <p class="tab-links" onclick="opentab('lingvistic')">
-                            Linguistic Level
-                        </p>
-                    </div>
-                    <div class="tab-contents active-tab" id="formal">
-    <ul>
-        <li>
-            <span>The Search for Extrema</span><br />
-            Determining the maximum or minimum value of a target function $f(x)$ over a specified domain $D$. This is done under a series of <b>inequality constraints</b>.
-            The solution yields the <b>Global Optimum</b> or <b>Global Minimum</b>.
-        </li>
-        <li>
-            <span>Operations Research</span><br />
-            Using mathematical modeling (e.g., <b>Linear Programming</b>) to make the best possible decisions (e.g., resource allocation). This field optimizes complex industrial and logistical systems.
-        </li>
-        <li>
-            <span>Calculus Application</span><br />
-            In differential calculus, finding the optimum involves setting the first derivative, $f'(x)$, to zero to locate <b>critical points</b>, which correspond to local optima.
-        </li>
-        <li>
-            <span>Algorithmic Approach</span><br />
-            Methods like <b>Gradient Descent</b> are used to iteratively move towards the minimum value of a function, particularly in <b>machine learning</b>.
-        </li>
-    </ul>
-</div>
-<div class="tab-contents" id="tehnic">
-    <ul>
-        <li>
-            <span>Web Performance</span><br />
-            Reducing the loading time and resource consumption (<b>memory, CPU</b>) of a web application. Key metrics include <b>First Contentful Paint (FCP)</b> and <b>Time to Interactive (TTI)</b>.
-        </li>
-        <li>
-            <span>SEO (Search Engine Optimization)</span><br />
-            Adapting content and structure to maximize visibility in search engine results. This involves optimizing keywords, metadata, and the <b>Information Architecture</b>.
-        </li>
-        <li>
-            <span>Code Optimization</span><br />
-            Refining source code or assembly code to make software run faster, consume less memory, or reduce power consumption. Often done via <b>Compiler Optimization</b> techniques.
-        </li>
-        <li>
-            <span>Conversion Rate Optimization (CRO)</span><br />
-            The systematic process of increasing the percentage of website visitors who take a desired action (e.g., filling out a form, making a purchase). This is achieved through <b>A/B testing</b>.
-        </li>
-    </ul>
-</div>
-<div class="tab-contents" id="lingvistic">
-    <ul>
-        <li>
-            <span>Etymology</span><br />
-            From Latin *optimum* (the best). The verb *to optimize* appeared late, in the 19th century, linked to the calculus of functions. The noun <b>Optimization</b> came later, establishing the process.
-        </li>
-        <li>
-            <span>Derivatives</span><br />
-            <b>Optimal</b> (adjective: the best), <b>Optimized</b> (past participle/adjective: having been made best), <b>Sub-optimal</b> (less than best).
-        </li>
-        <li>
-            <span>The Core Meaning</span><br />
-            The linguistic core implies not just "improvement," but the deliberate pursuit of the <b>best possible function</b> or outcome within defined limits.
-        </li>
-        <li>
-            <span>Antonym/Cautionary Term</span><br />
-            <b>Over-optimization</b>: the state where excessive effort to improve harms the primary goal, often resulting in diminishing or negative returns (e.g., <b>keyword stuffing</b> in SEO).
-        </li>
-    </ul>
-</div>
-                </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/MinMax.png" alt="MinMax" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">Formal & Contextual Definition</h1>
+
+            <p>
+              <span>Optimization</span> is the art and science of achieving the
+              best possible result (<span>the Optimal</span>) given limited
+              resources and constraints. It doesn't mean perfection, but
+
+              <span>maximum efficiency</span>.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('formal')">
+                Formal Level (Mathematics)
+              </p>
+
+              <p class="tab-links" onclick="opentab('tehnic')">
+                Technical Level (IT/Web)
+              </p>
+
+              <p class="tab-links" onclick="opentab('lingvistic')">
+                Linguistic Level
+              </p>
             </div>
+
+            <div class="tab-contents active-tab" id="formal">
+              <ul>
+                <li>
+                  <span>The Search for Extrema</span><br />
+
+                  This is about finding the highest or lowest value of a
+                  function <em>f(x)</em> within a certain range. We do this
+                  while respecting some limits or rules (called inequality
+                  constraints). The goal is to find the absolute best or worst
+                  value, known as the global optimum or minimum.
+                </li>
+
+                <li>
+                  <span>Operations Research</span><br />
+
+                  This field uses math models, like Linear Programming, to help
+                  make the best decisions—such as how to allocate resources
+                  efficiently. It’s especially useful for optimizing complex
+                  systems in industries and logistics.
+                </li>
+
+                <li>
+                  <span>Calculus Application</span><br />
+
+                  In calculus, to find the best points (optima), we look for
+                  where the slope of the function (its first derivative) is
+                  zero. These points are called critical points and can be local
+                  highs or lows.
+                </li>
+
+                <li>
+                  <span>Algorithmic Approach</span><br />
+
+                  Techniques like Gradient Descent help us gradually move toward
+                  the lowest point of a function. This method is widely used in
+                  machine learning to improve models step by step.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="tehnic">
+              <ul>
+                <li>
+                  <span>Web Performance</span><br />
+
+                  This focuses on making websites load faster and use fewer
+                  resources like memory and CPU. Important measures include how
+                  quickly the first content appears (First Contentful Paint) and
+                  when the page becomes fully interactive (Time to Interactive).
+                </li>
+
+                <li>
+                  <span>SEO (Search Engine Optimization)</span><br />
+
+                  SEO is about tweaking your website's content and structure to
+                  rank higher in search results. This involves optimizing
+                  keywords, metadata, and organizing information clearly.
+                </li>
+
+                <li>
+                  <span>Code Optimization</span><br />
+
+                  This means improving source or assembly code so software runs
+                  faster, uses less memory, or saves power. Compiler
+                  optimization techniques often help achieve this.
+                </li>
+
+                <li>
+                  <span>Conversion Rate Optimization (CRO)</span><br />
+
+                  CRO is the process of increasing the percentage of visitors
+                  who take a desired action on a website, like filling out a
+                  form or making a purchase. This is often done through A/B
+                  testing to find what works best.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="lingvistic">
+              <ul>
+                <li>
+                  <span>Etymology</span><br />
+
+                  The word “optimum” comes from Latin, meaning “the best.” The
+                  verb “to optimize” appeared in the 19th century, linked to
+                  calculus. The noun “optimization” came later, describing the
+                  process of making something as good as possible.
+                </li>
+
+                <li>
+                  <span>Derivatives</span><br />
+
+                  Related words include “optimal” (best), “optimized” (made
+                  best), and “sub-optimal” (less than best).
+                </li>
+
+                <li>
+                  <span>The Core Meaning</span><br />
+
+                  At its heart, optimization isn't just about improvement, it's
+                  about deliberately aiming for the best possible outcome within
+                  certain limits.
+                </li>
+
+                <li>
+                  <span>Antonym/Cautionary Term</span><br />
+
+                  “Over-optimization” happens when trying too hard to improve
+                  something actually backfires, causing worse results. For
+                  example, in SEO, this can look like keyword stuffing, which
+                  harms rankings.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">Deep Dive: The Quest for the 'Global Optimum'</h1>
-            <div class="services-list">
-                <div>
-    <i class="fa-solid fa-puzzle-piece"></i>
-    <h2>The Improbable Context: Biology</h2>
-    <p>
-        How does nature optimize? Organisms do not seek an absolute maximum but a 'good enough' solution (an <b>Evolutionarily Stable Strategy</b>). Optimization here is a slow, iterative process, full of <b>local minima</b>.
-    </p>
-</div>
-<div>
-    <i class="fa-solid fa-infinity"></i>
-    <h2>The Impossible Context: Existence</h2>
-    <p>
-        If life were an optimization algorithm, what would be the <b>target function</b> (f(x))? Happiness? Longevity? Impact? The lack of a clear objective function makes the <b>optimization of existence</b> a philosophical paradox.
-    </p>
-</div>
-<div>
-    <i class="fa-solid fa-wand-magic-sparkles"></i>
-    <h2>Deep Dive: The Paradox of Perfection</h2>
-    <p>
-        Excessive optimization (<b>Over-optimization</b>) becomes counterproductive. Highly optimized code can become unreadable. A perfectly optimized diet can ruin social balance. <b>Optimum always implies a compromise.</b>
-    </p>
-</div>
-            </div>
-        </div>
-    </div>
+    <div id="deep" class="services">
+      <div class="container">
+        <h1 class="sub-title">Deep Dive: The Quest for the 'Global Optimum'</h1>
 
-    <div id="personal-op" class="full-screen-section">
-        <div class="container">
-            <h1 class="sub-title">The Personal Vision: A Self-Regulating System</h1>
-            <div class="row">
-                <div class="contact-left">
-                    <p>
-                        For me, Optimization is synonymous with **managing energy and attention**. I see myself as a system, and my most limited resources are not money or time, but **willpower and focus**.
-                    </p>
-                    <blockquote cite="AI Assistant">
-                        "To optimize means creating **silent systems** that run on autopilot (rituals, routines, an organized workspace), thereby freeing up the mind's processing power for **truly complex problems**. It's about making the simple things, simple. And the complex things, possible."
-                    </blockquote>
-                    <p>
-                        This is reflected in my passion for **Information Architecture (IA)**: finding the shortest and most logical path for the user, minimizing friction and uncertainty.
-                    </p>
-                </div>
-                <div class="contact-right">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-puzzle-piece"></i>
 
-    <div id="opinii-lume" class="full-screen-section">
-        <div class="container">
-            <h1 class="sub-title">Optimization in the Real World: Collected Views</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-dna"></i>
-                    <h2>Madalina (23, Biologist)</h2>
-                    <p>
-                        "For me, optimization is **metabolic efficiency**. How a cell manages to consume minimal energy and produce maximum proteins. Or how a plant adapts to low light. It's a constant balance between effort and survival."
-                    </p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Dani (23, IT Specialist)</h2>
-                    <p>
-                        "Optimization is when an **algorithm** that ran in 5 seconds, after a small change, runs in 0.1 seconds. It's the feeling of having eliminated an invisible *bottleneck*. In IT, it's about making limited resources (time/memory) do more."
-                    </p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-users-line"></i>
-                    <h2>Viorel (52, Police Officer)</h2>
-                    <p>
-                        "Optimization? That's **prevention**. Avoiding the bad situation. Optimizing patrol routes to maximize presence. Simplifying bureaucracy so people don't waste time. It's about making the system work with the least amount of chaos."
-                    </p>
-                </div>
-            </div>
+            <h2>The Improbable Context: Biology</h2>
+
+            <p>
+              How does nature achieve optimization? Unlike mathematical problems
+              seeking an absolute maximum or minimum, living organisms often
+              settle for a 'good enough' solution known as an
+
+              <b>Evolutionarily Stable Strategy</b>. This process is slow and
+              iterative, shaped by countless adaptations and trade-offs,
+              navigating through numerous <b>local minima</b> rather than a
+              single perfect peak.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-infinity"></i>
+
+            <h2>The Impossible Context: Existence</h2>
+
+            <p>
+              If life itself were an optimization algorithm, what exactly would
+              be the <b>target function</b> (f(x))? Would it be happiness,
+              longevity, impact, or something else entirely? The absence of a
+              clearly defined objective makes the
+
+              <b>optimization of existence</b> a profound philosophical paradox,
+              inviting endless debate about what it truly means to live
+              optimally.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <h2>Deep Dive: The Paradox of Perfection</h2>
+
+            <p>
+              Excessive optimization, or <b>over-optimization</b>, can easily
+              become counterproductive. For example, code that is too finely
+              tuned may become difficult to read and maintain, while a perfectly
+              optimized diet might disrupt social interactions and enjoyment.
+              This highlights that the
+
+              <b>optimum always involves compromise</b>, balancing efficiency
+              with practicality and human factors.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Visualizing Optimization</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/OptimizationProblem.png" alt="Optimization Problem" />
-                    <div class="layer">
-                        <h3>Color, Shape & Symbol</h3>
-                        <p>
-                            **Color:** **Green (Efficiency)** converging into **Blue (Precision/Control)**.
-                            **Shape:** The **Funnel**, filtering out waste and failure toward the desired result.
-                        </p>
-                    </div>
-                </div>
-                <div class="work">
+      <div class="container">
+        <h1 class="sub-title">Visualizing Optimization</h1>
 
-                    <div class="layer">
-                        <h3>The Mathematical Symbol</h3>
-                        <p>
-                            $$ \text{maximize } f(x) $$
-                            $$ \text{subject to } g(x) \le 0 $$
-                            The symbol is the essence: **to maximize a function (the goal) under a constraint (reality).**
-                        </p>
-                    </div>
-                </div>
-                <div class="work">
-                    [Video Placeholder: A short animation of iterative improvement from slow, clumsy movement to fast, fluid movement]
-                    <div class="layer">
-                        <h3>Multimodal Format</h3>
-                        <p>
-                            An animation showing **iteration**. It starts slow, fails, adjusts, and finally achieves a fluid, rapid rhythm. Optimization is **intelligent movement**, not necessarily fast movement.
-                        </p>
-                    </div>
-                </div>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/River.png" alt="River" />
+
+            <div class="layer">
+              <h3>Color, Shape & Symbol</h3>
+
+              <p>
+                Imagine a journey where vibrant green energy, symbolizing
+                efficiency and growth, gracefully flows into a calm, controlled
+                blue, representing precision and mastery. The funnel shape
+                captures this transformation perfectly, channeling scattered
+                efforts and eliminating waste, guiding everything toward a
+                clear, focused goal. It's the art of refining chaos into
+                clarity.
+              </p>
             </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="images/BalanceGoalConstraint.png"
+              alt="Balance Goal Constraint"
+            />
+
+            <div class="layer">
+              <h3>The Mathematical Symbol</h3>
+
+              <p>
+                At the heart of optimization lies a powerful symbol: the quest
+                to maximize a function, our goal, while gracefully respecting
+                the boundaries set by reality. This elegant balance between
+                ambition and constraint captures the essence of problem-solving,
+                reminding us that true success is about thriving within limits,
+                not ignoring them.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/AbstractSpiral.png" alt="Abstract Spiral" />
+
+            <div class="layer">
+              <h3>Multimodal Format</h3>
+
+              <p>
+                Optimization is a dance of persistence and adaptation. Picture a
+                slow, hesitant movement that stumbles and learns, gradually
+                evolving into a smooth, confident rhythm. This animation
+                embodies the spirit of intelligent progress—where every failure
+                is a lesson, and every adjustment brings us closer to effortless
+                mastery.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div id="personal" class="services">
+      <div class="container">
+        <h1 class="sub-title">The Personal Vision: A Self-Regulating System</h1>
+
+        <div class="row two-column-layout">
+          <div class="text-column">
+            <p>
+              For me, optimization is about managing my energy and attention,
+              not just time or money. Willpower and focus are my most limited
+              resources, so I see myself as a system that needs careful tuning.
+            </p>
+
+            <p>
+              Building quiet, automatic habits like routines and an organized
+              workspace helps free my mind from small distractions. These
+              “silent systems” let me focus on more complex and meaningful
+              challenges.
+            </p>
+
+            <p>
+              This makes simple tasks truly simple and complex ones achievable.
+              When the basics run smoothly, I can direct my energy toward
+              creativity and growth without feeling overwhelmed.
+            </p>
+
+            <p>
+              My passion for Information Architecture reflects this
+              mindset—finding clear, logical paths that reduce friction and
+              uncertainty, whether for users or in my own life.
+            </p>
+
+            <p>
+              Ultimately, optimization is about creating a balanced system where
+              energy flows efficiently, distractions are minimized, and focus is
+              protected to help me be my best self.
+            </p>
+          </div>
+
+          <div class="image-column">
+            <img src="images/PersonalOpinion.png" alt="Personal Opinion" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="people" class="services">
+      <div class="container">
+        <h1 class="sub-title">
+          Optimization in the Real World: Collected Views
+        </h1>
+
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-dna"></i>
+
+            <h2>Madalina (23, Biologist)</h2>
+
+            <p>
+              For me, optimization means achieving
+
+              <strong>metabolic efficiency</strong>. It’s fascinating how a
+              single cell can carefully manage its energy consumption to produce
+              the maximum amount of proteins needed for survival. Similarly, I
+              admire how plants adapt to low light conditions by adjusting their
+              processes. It’s a delicate, ongoing balance between effort and
+              survival that nature constantly fine-tunes.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h2>Dani (23, IT Specialist)</h2>
+
+            <p>
+              Optimization, in my world, is when an
+
+              <strong>algorithm</strong> that used to take 5 seconds suddenly
+              runs in just 0.1 seconds after a small tweak. It’s the satisfying
+              feeling of removing an invisible <em>bottleneck</em> that was
+              holding everything back. In IT, it’s all about making the most out
+              of limited resources like time and memory, pushing systems to
+              perform faster and more efficiently.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-users-line"></i>
+
+            <h2>Viorel (52, Police Officer)</h2>
+
+            <p>
+              To me, optimization is fundamentally about
+
+              <strong>prevention</strong>. It means avoiding problems before
+              they happen by planning smarter patrol routes to maximize police
+              presence. It also involves simplifying bureaucracy so people don’t
+              waste valuable time. Ultimately, it’s about making the entire
+              system work smoothly with as little chaos and disruption as
+              possible.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="contact">
@@ -265,68 +469,91 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>claudiucris2002@gmail.com</p>
+
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>claudiucris2002@gmail.com
+            </p>
+
             <p><i class="fa-solid fa-phone"></i>(+40) 724-037-721</p>
+
             <div class="social-icons">
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
               <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
           </div>
+
           <div class="contact-right">
             <form>
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="email" id="Your email" placeholder="Your email" required>
-              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <input type="text" name="Name" placeholder="Your Name" required />
+
+              <input
+                type="email"
+                name="email"
+                id="Your email"
+                placeholder="Your email"
+                required
+              />
+
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+
               <button type="submit" class="btn btn2">Submit</button>
             </form>
           </div>
         </div>
       </div>
+
       <div class="copyright">
         <p>Copyright &copy; Made by Dascalu Claudiu Cristian</p>
       </div>
     </div>
 
     <script>
-        // Tab function (Kept and adapted)
-        var tabLinks = document.getElementsByClassName("tab-links");
-        var tabContents = document.getElementsByClassName("tab-contents");
+      var tabLinks = document.getElementsByClassName("tab-links");
 
-        function opentab(tabName) {
-            for (tabLink of tabLinks) {
-                tabLink.classList.remove("active-link");
-            }
+      var tabContents = document.getElementsByClassName("tab-contents");
 
-            for (tabContent of tabContents) {
-                tabContent.classList.remove("active-tab");
-            }
-
-            const targetElement = event.currentTarget || document.querySelector(`.tab-links[onclick*='${tabName}']`);
-            if (targetElement) {
-                targetElement.classList.add("active-link");
-            }
-            document.getElementById(tabName).classList.add("active-tab");
+      function opentab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
         }
 
-        // Mobile menu function (Kept)
-        var sideMenu = document.getElementById("sidemenu");
-
-        function openMenu() {
-            sideMenu.style.right = "0";
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
         }
 
-        function closenMenu() {
-            sideMenu.style.right = "-200px";
+        const targetElement =
+          event.currentTarget ||
+          document.querySelector(`.tab-links[onclick*='${tabName}']`);
+
+        if (targetElement) {
+          targetElement.classList.add("active-link");
         }
 
-        // Close menu on navigation click for single-page optimization
-        document.querySelectorAll('#sidemenu a').forEach(item => {
-            item.addEventListener('click', () => {
-                // Add a small delay to allow smooth scrolling before closing the menu
-                setTimeout(closenMenu, 300); 
-            });
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+
+      var sideMenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+
+      function closenMenu() {
+        sideMenu.style.right = "-200px";
+      }
+
+      document.querySelectorAll("#sidemenu a").forEach((item) => {
+        item.addEventListener("click", () => {
+          setTimeout(closenMenu, 300);
         });
+      });
     </script>
-</body>
+  </body>
 </html>
